@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: content-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .add {
+            width: 200px;
+            height: 200px;
+        }
+
+        .add input {
+            width: 99%;
+            margin-top: 5px;
+            height: 25px;
+        }
+
+        .add label {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+        }
+
+        button {
+            padding: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="add">
+        <form action="/" method="POST">
+            <div class="names">
+                <div class="first">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="first" id="" autocomplete="off" required>
+                </div>
+                <div class="last">
+                    <label for="firstName">Last Name</label>
+                    <input type="text" name="last" id="" autocomplete="off" required>
+                </div>
+            </div>
+            <div class="location">
+                <label for="location">
+                    Location
+                </label>
+                <input type="text" name="location" id="" autocomplete="off" required>
+            </div>
+            <div class="btn">
+                <button type="submit">Connect with Us!</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

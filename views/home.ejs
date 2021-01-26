@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+    <div class="header">
+        <form action="/search" method="POST">
+            <input type="text" name="search" id="" placeholder="name or location!">
+            <button type="submit">Search</button>
+        </form>
+        <a href="/add-user">Add</a>
+    </div>
+    <% console.log(tempUser1.length , tempUser2.length) %>
+
+        <% if (tempUser1.length> 0){ %>
+            <% for (var i=0;i<tempUser1.length ;i++){%>
+                <div class="collection">
+                    <p>
+                        <%= tempUser1[i].firstName %>
+                            <%= tempUser1[i].lastName %>
+                    </p>
+                    From
+                    <p>
+                        <%= tempUser1[i].location %>
+                    </p>
+                </div>
+                <% }%>
+                    <% }%>
+
+
+                        <% if (tempUser2.length> 0){%>
+                            <% for (var i=0;i<tempUser2.length ;i++){%>
+                                <div class="collection">
+                                    <p>
+                                        <%= tempUser2[i].firstName %>
+                                            <%= tempUser2[i].lastName %>
+                                    </p>
+                                    From
+                                    <p>
+                                        <%= tempUser2[i].location %>
+                                    </p>
+                                </div>
+                                <% }%>
+                                    <% }%>
+
+</body>
+
+</html>

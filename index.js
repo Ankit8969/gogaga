@@ -12,7 +12,7 @@ const User = require('./models/user')
 
 // hnAS0Nwke94AKnHX
 
-mongoose.connect('mongodb://127.0.0.1:27017/gogaga', {
+mongoose.connect('mongodb+srv://internship:hnAS0Nwke94AKnHX@cluster0.aia5b.mongodb.net/gogaga?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true
